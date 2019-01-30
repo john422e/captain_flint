@@ -12,7 +12,7 @@ GPIO.setup(2, GPIO.OUT) # initialize to 'off'
 
 print('on')
 GPIO.output(2, True)
-subprocess.call(['afplay', filename])
+subprocess.call([command, filename])
 
 sleep(2)
 
