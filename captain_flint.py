@@ -4,7 +4,7 @@ from time import sleep
 
 # setup
 filename = "pieces_of_eight.wav"
-command = 'afplay'
+command = 'aplay'
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
