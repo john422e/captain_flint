@@ -63,17 +63,22 @@ GPIO.setup(2, GPIO.OUT) # initialize to 'off'
 # initialize sensor pins
 ultrasonic_init()
 
+def pieces_of_eight():
+    print('on')
+    GPIO.output(2, True)
+    subprocess.call([command, filename])
+
+def turn_off():
+    print('off')
+    GPIO.output(2, False)
+
+
+trigger_thresh = 30
+
 while True:
-    print(get_reading())
-    time.sleep(1)
-
-"""
-print('on')
-GPIO.output(2, True)
-subprocess.call([command, filename])
-
-sleep(2)
-
-print('off')
-GPIO.output(2, False)
-"""
+    reading = get_reading()
+    print(reading)
+    if reading >= trigger_thresh:
+        pieces_of_eight()
+        time.sleep(3)
+        turn_off()
