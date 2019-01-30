@@ -81,5 +81,6 @@ while True:
     if reading <= trigger_thresh:
         print('triggered')
         #pieces_of_eight()
-        time.sleep(3)
+        time.sleep(1)
         #turn_off()
+    time.sleep(.5)
