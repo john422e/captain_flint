@@ -73,7 +73,7 @@ def turn_off():
     GPIO.output(2, False)
 
 
-trigger_thresh = 30
+trigger_thresh = 60
 
 while True:
     reading = get_reading()
@@ -83,4 +83,4 @@ while True:
         pieces_of_eight()
         time.sleep(3)
         turn_off()
-    time.sleep(.5)
+    time.sleep(.1)
