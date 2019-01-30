@@ -78,7 +78,7 @@ trigger_thresh = 30
 while True:
     reading = get_reading()
     print(reading)
-    if reading >= trigger_thresh:
+    if reading <= trigger_thresh:
         pieces_of_eight()
         time.sleep(3)
         turn_off()
