@@ -7,10 +7,10 @@ import pathlib, pygame
 # my modules
 import audioFunctions as af
 
-runningOnPi = False # set to False for demoing on desktop
+runningOnPi = True # set to False for demoing on desktop
 if runningOnPi:
     import sensorFuncs as sensor
-    
+
 # collect audio files
 audioDir = str(pathlib.Path.cwd()) + "/audio/wavs/"
 audioDir = pathlib.Path(audioDir)
