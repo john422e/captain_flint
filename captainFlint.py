@@ -36,7 +36,7 @@ cpt_on = True
 startSound = None
 for f in audioFiles:
     if "pieces_of_eight" in str(f):
-        startSound = f
+        startSound = str(f)
 
 if startSound:
     print("START UP")
