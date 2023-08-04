@@ -56,7 +56,7 @@ while cpt_on:
         audioFile = str(choice(audioFiles))
         af.playSound(audioFile, channel1, -1.0) # filename, channel, pan value
         sleep(0.5) # add a short buffer delay
-
+    sleep(0.25)
     #pygame.mixer.quit()
     #cpt_on = False
 
