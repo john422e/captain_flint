@@ -49,7 +49,7 @@ while cpt_on:
         reading = sensor.get_reading()
     else:
         reading = randReading = randrange(1000)
-    print("READING", randReading)
+    print("READING", reading)
     if randReading > 10 and randReading < 200:
         print("TRIGGER SOUND")
     # if triggered, play random sound file
