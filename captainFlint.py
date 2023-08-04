@@ -52,10 +52,10 @@ while cpt_on:
     print("READING", reading)
     if reading > 10 and reading < 110:
         print("TRIGGER SOUND")
-    # if triggered, play random sound file
-    audioFile = str(choice(audioFiles))
-    af.playSound(audioFile, channel1, -1.0) # filename, channel, pan value
-    sleep(0.5) # add a short buffer delay
+        # if triggered, play random sound file
+        audioFile = str(choice(audioFiles))
+        af.playSound(audioFile, channel1, -1.0) # filename, channel, pan value
+        sleep(0.5) # add a short buffer delay
 
     #pygame.mixer.quit()
     #cpt_on = False
