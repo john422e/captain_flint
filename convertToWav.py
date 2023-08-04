@@ -32,6 +32,7 @@ for m4a in audioFiles:
     print(fn)
     # convert to audio segment
     track = AudioSegment.from_file(m4a, format='m4a')
+    track = track.set_frame_rate(48000).set_channels(1)
     # make output filename
     outFile = outDir + fn + ".wav"
     # now export

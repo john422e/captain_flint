@@ -50,7 +50,7 @@ while cpt_on:
     else:
         reading = randrange(1000)
     print("READING", reading)
-    if reading > 10 and reading < 200:
+    if reading > 10 and reading < 110:
         print("TRIGGER SOUND")
     # if triggered, play random sound file
     audioFile = str(choice(audioFiles))
