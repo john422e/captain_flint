@@ -40,7 +40,7 @@ for f in audioFiles:
 
 if startSound:
     print("START UP")
-    af.playSound(startSound, channel1, 1.0)
+    af.playSound(startSound, channel1, -1.0)
 
 # MAIN LOOP
 while cpt_on:
@@ -54,7 +54,7 @@ while cpt_on:
         print("TRIGGER SOUND")
     # if triggered, play random sound file
     audioFile = str(choice(audioFiles))
-    af.playSound(audioFile, channel1, 1.0) # filename, channel, pan value
+    af.playSound(audioFile, channel1, -1.0) # filename, channel, pan value
     sleep(0.5) # add a short buffer delay
 
     #pygame.mixer.quit()
