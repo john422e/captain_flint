@@ -53,7 +53,7 @@ while cpt_on:
     if reading > 10 and reading < 200:
         print("TRIGGER SOUND")
     # if triggered, play random sound file
-    audioFile = choice(audioFiles)
+    audioFile = str(choice(audioFiles))
     af.playSound(audioFile, channel1, 1.0) # filename, channel, pan value
     sleep(0.5) # add a short buffer delay
 
