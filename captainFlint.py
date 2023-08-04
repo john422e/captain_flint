@@ -48,9 +48,9 @@ while cpt_on:
     if runningOnPi:
         reading = sensor.get_reading()
     else:
-        reading = randReading = randrange(1000)
+        reading = randrange(1000)
     print("READING", reading)
-    if randReading > 10 and randReading < 200:
+    if reading > 10 and reading < 200:
         print("TRIGGER SOUND")
     # if triggered, play random sound file
     audioFile = choice(audioFiles)
