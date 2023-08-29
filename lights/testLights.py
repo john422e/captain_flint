@@ -1,5 +1,5 @@
 import time
-from rpi_ws281 import *
+from rpi_ws281x import *
 import argparse
 
 # LED strip configuration:
