@@ -17,5 +17,5 @@ strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, 
 # Intialize the library (must be called once before other functions).
 strip.begin()
 
-for i in stip.numPixels():
+for i in strip.numPixels():
     print(i)
